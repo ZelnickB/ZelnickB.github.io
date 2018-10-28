@@ -1,0 +1,52 @@
+@keyframes bgMorph {
+    0% {
+        background: red;
+    }
+    20% {
+        background: orange;
+    }
+    40% {
+        background: yellow;
+    }
+    60% {
+        background: green;
+    }
+    80% {
+        background: blue;
+    }
+    90% {
+        background: purple;
+    }
+    100% {
+        background: magenta;
+    }
+}
+html {
+    font-family: 'Open Sans';
+    position: relative;
+    min-height: 100%;
+    animation: bgMorph;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#org {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#name {
+    margin-top: 0px;
+    cursor: pointer;
+}
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
